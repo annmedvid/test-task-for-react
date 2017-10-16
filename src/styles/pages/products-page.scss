@@ -1,0 +1,71 @@
+@import '../variables';
+
+.products-page {
+    margin-top: 150px;
+    display: flex;
+    flex-flow: column;
+    align-items: stretch;
+    font-size: 18px;
+    color: $flint;
+
+    .link {
+        margin: 0 300px 20px 0;
+        align-self: flex-end;
+        font-size: 20px;
+        text-transform: capitalize;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &_content {
+        flex: 1;
+        width: 600px;
+        align-self: center;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-content: flex-start;
+    }
+
+    .header {
+        flex: 1 1 100%;
+        margin-bottom: 15px;
+        font-size: 40px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+}
+
+.product {
+    width: 170px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: 5px;
+    border: 1px solid red;
+    border-radius: 10px;
+
+    .name {
+
+    }
+
+    .colors span {
+        margin-right: 10px;
+        font-size: 16px;
+    }
+
+    .submit {
+        align-self: flex-end;
+        margin-top: 5px;
+        font-size: 14px;
+        border-radius: 10px;
+        color: $flint;
+
+        &:hover {
+            color: lighten($flint, 15%);
+        }
+    }
+}
