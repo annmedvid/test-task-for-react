@@ -9,3 +9,8 @@ This app allows to create/save/delete product records.
 npm install
 npm start
 ```
+
+##### To start linting:
+```sh
+npm lint
+```
