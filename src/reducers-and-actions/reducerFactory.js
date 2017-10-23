@@ -1,12 +1,12 @@
 export default function createReducer(reducerMap, initialState) {
-  	return (state = initialState, action) => {
-    	let stateUpdates = state;
-    	const reducer = reducerMap[action.type];
+	return (state = initialState, action) => {
+		let stateUpdates = state;
+		const reducer = reducerMap[action.type];
 
-    	if (reducer) {
-      		stateUpdates = reducer(state, action.payload);
-    	}
+		if (reducer) {
+			stateUpdates = reducer(state, action.payload);
+		}
 
-    	return stateUpdates === state ? state : { ...state, ...stateUpdates };
-  	};
+		return stateUpdates === state ? state : { ...state, ...stateUpdates };
+	};
 }

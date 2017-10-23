@@ -1,0 +1,35 @@
+{
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    },
+    "extends": "airbnb",
+    "env": {
+        "browser": true
+    },
+    "parser": "babel-eslint",
+    "rules": {
+        "no-plusplus": "off",
+        "indent": "off",
+        "import/no-unresolved": "off",
+        "import/extensions": ["error", "never", {"svg": "always", "scss": "always"}],
+        "arrow-body-style": ["error", "always"],
+        "no-tabs": "off",
+        "indent": [2, "tab"],
+        "react/jsx-indent": [2, "tab"],
+        "react/jsx-indent-props": [2, "tab"],
+        "react/prop-types": "off",
+        "react/forbid-prop-types": "off",
+        "react/no-unused-prop-types": "off",
+        "react/jsx-closing-bracket-location": [1, {"selfClosing": "after-props", "nonEmpty": "after-props"}],
+        "react/no-unused-state": "off",
+        "no-shadow": "off",
+        "object-curly-newline": "off",
+        "semi": "off",
+        "jsx-a11y/anchor-is-valid": ["error", {"specialLink": "to"}],
+        "jsx-a11y/label-has-for": [2, {"components": ["Label"], "required": {"some": ["nesting", "id"]}, "allowChildren": false}]
+    }
+}
